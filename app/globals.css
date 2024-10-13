@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add this to your globals.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -76,3 +81,23 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Apply to the entire page or a specific container */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0; /* Color of the scrollbar thumb on hover */
+}
+
